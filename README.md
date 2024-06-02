@@ -9,26 +9,26 @@ Description: Developed an immunity prediction system that leverages machine lear
 Before you begin, ensure you have met the following requirements:
 
 Installation:
-Python 3.7+
-MongoDB installed and running
+Python 3.7+,
+MongoDB installed and running,
 Flask installed
 
 Clone the repository:
-git clone https://github.com/yourusername/immunity-prediction-system.git
+git clone https://github.com/yourusername/immunity-prediction-system.git ,
 cd immunity-prediction-system
 
 Set up a virtual environment:
-python -m venv venv
+python -m venv venv,
 source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
 
 Install the required packages:
-pip install -r requirements.txt
+pip install -r requirements.txt,
 Start MongoDB:
 Ensure MongoDB is installed and running on your local machine. If not installed, download and install it from MongoDB Official Website.
 
 Database Configuration:
-Create a database in MongoDB named immunity_db.
-Update config.py file with your MongoDB connection string if necessary.
+Create a database in MongoDB named immunity_db.,
+Update config.py file with your MongoDB connection string if necessary.,
 Running the Application
 
 Start the Flask application:
