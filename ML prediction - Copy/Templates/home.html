@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Immunity Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+  <div class="login">
+    <h1>Immunity predictor</h1>
+
+    <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+      <label for="Height">Height:</label>
+      <input type="number" name="Height" placeholder="Height" required="required" />
+      <label for="Weight">Weight:</label>
+      <input type="number" name="Weight" placeholder="Weight" required="required" />
+      <label for="Protein_Score">Protein Score:</label>
+      <input type="number" name="Protein_Score" placeholder="Protein Score" required="required" />
+      <label for="Average_Age">Age:</label>
+      <input type="number" name="Average_Age" placeholder="Age" required="required" />
+      <label for="Diabetes_Level">Diabetes Level:</label>
+      <input type="number" name="Diabetes_Level" placeholder="Diabetes Level" required="required" />
+      <label for="Sleep_Hours">Sleep Hours:</label>
+      <input type="number" name="Sleep_Hours" placeholder="Sleep Hours" required="required" />
+      
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+  
+  
+
+    <br>
+    <br>
+    {% if prediction_text %}
+    <p>Immunity Index: {{ immunity_index }}</p>
+    <p>{{ prediction_text }}</p>
+    
+    {% endif %}
+
+  </div>
+</body>
+</html>
