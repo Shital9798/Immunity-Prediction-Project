@@ -17,7 +17,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. **Clone the repository:**
    
-  - git clone https://github.com/yourusername/immunity-prediction-system.git
+  - git clone https://github.com/Shital9798/immunity-prediction-system.git
   - cd immunity-prediction-system
 2. **Set up a virtual environment:**
    -python -m venv venv
